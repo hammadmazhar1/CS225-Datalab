@@ -36,27 +36,27 @@
 //1
 int bitXor(int, int);
 int test_bitXor(int, int);
-int addOK(int, int);
-int test_addOK(int, int);
 //2
 int allEvenBits();
 int test_allEvenBits();
 int allOddBits();
 int test_allOddBits();
-int replaceByte(int, int, int);
-int test_replaceByte(int, int, int);
 //3
 int dividePower2(int, int);
 int test_dividePower2(int, int);
-int bitParity(int);
-int test_bitParity(int);
 int isLessOrEqual(int, int);
 int test_isLessOrEqual(int, int);
+int addOK(int, int);
+int test_addOK(int, int);
+int replaceByte(int, int, int);
+int test_replaceByte(int, int, int);
 //4
 int remainderPower2(int, int);
 int test_remainderPower2(int, int);
 int howManyBits(int);
 int test_howManyBits(int);
+int bitParity(int);
+int test_bitParity(int);
 //float
 unsigned floatScale2(unsigned);
 unsigned test_floatScale2(unsigned);

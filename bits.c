@@ -180,17 +180,6 @@ NOTES:
 int bitXor(int x, int y) {
   return 2;
 }
-/* 
- * addOK - Determine if can compute x+y without overflow
- *   Example: addOK(0x80000000,0x80000000) = 0,
- *            addOK(0x80000000,0x70000000) = 1, 
- *   Legal ops: ! ~ & ^ | + << >>
- *   Max ops: 20
- *   Rating: 3
- */
-int addOK(int x, int y) {
-  return 2;
-}
 //2
 /* 
  * allEvenBits - return 1 if all even-numbered bits in word set to 1
@@ -214,18 +203,6 @@ int allEvenBits(int x) {
 int allOddBits(int x) {
   return 2;
 }
-/* 
- * replaceByte(x,n,c) - Replace byte n in x with c
- *   Bytes numbered from 0 (LSB) to 3 (MSB)
- *   Examples: replaceByte(0x12345678,1,0xab) = 0x1234ab78
- *   You can assume 0 <= n <= 3 and 0 <= c <= 255
- *   Legal ops: ! ~ & ^ | + << >>
- *   Max ops: 10
- *   Rating: 3
- */
-int replaceByte(int x, int n, int c) {
-  return 2;
-}
 //3
 /* 
  * dividePower2 - Compute x/(2^n), for 0 <= n <= 30
@@ -238,16 +215,6 @@ int replaceByte(int x, int n, int c) {
 int dividePower2(int x, int n) {
     return 2;
 }
-/*
- * bitParity - returns 1 if x contains an odd number of 0's
- *   Examples: bitParity(5) = 0, bitParity(7) = 1
- *   Legal ops: ! ~ & ^ | + << >>
- *   Max ops: 20
- *   Rating: 4
- */
-int bitParity(int x) {
-  return 2;
-}
 /* 
  * isLessOrEqual - if x <= y  then return 1, else return 0 
  *   Example: isLessOrEqual(4,5) = 1.
@@ -256,6 +223,29 @@ int bitParity(int x) {
  *   Rating: 3
  */
 int isLessOrEqual(int x, int y) {
+  return 2;
+}
+/* 
+ * addOK - Determine if can compute x+y without overflow
+ *   Example: addOK(0x80000000,0x80000000) = 0,
+ *            addOK(0x80000000,0x70000000) = 1, 
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 20
+ *   Rating: 3
+ */
+int addOK(int x, int y) {
+  return 2;
+}
+/* 
+ * replaceByte(x,n,c) - Replace byte n in x with c
+ *   Bytes numbered from 0 (LSB) to 3 (MSB)
+ *   Examples: replaceByte(0x12345678,1,0xab) = 0x1234ab78
+ *   You can assume 0 <= n <= 3 and 0 <= c <= 255
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 10
+ *   Rating: 3
+ */
+int replaceByte(int x, int n, int c) {
   return 2;
 }
 //4
@@ -284,6 +274,16 @@ int remainderPower2(int x, int n) {
  */
 int howManyBits(int x) {
   return 0;
+}
+/*
+ * bitParity - returns 1 if x contains an odd number of 0's
+ *   Examples: bitParity(5) = 0, bitParity(7) = 1
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 20
+ *   Rating: 4
+ */
+int bitParity(int x) {
+  return 2;
 }
 //float
 /* 

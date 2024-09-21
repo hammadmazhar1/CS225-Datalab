@@ -65,11 +65,6 @@ int test_bitXor(int x, int y)
 {
   return x^y;
 }
-int test_addOK(int x, int y)
-{
-    long long lsum = (long long) x + y;
-    return lsum == (int) lsum;
-}
 //2
 int test_allEvenBits(int x) {
   int i;
@@ -84,6 +79,21 @@ int test_allOddBits(int x) {
       if ((x & (1<<i)) == 0)
    return 0;
   return 1;
+}
+//3
+int test_dividePower2(int x, int n)
+{
+    int p2n = 1<<n;
+    return x/p2n;
+}
+int test_isLessOrEqual(int x, int y)
+{
+  return x <= y;
+}
+int test_addOK(int x, int y)
+{
+    long long lsum = (long long) x + y;
+    return lsum == (int) lsum;
 }
 int test_replaceByte(int x, int n, int c)
 {
@@ -103,23 +113,6 @@ int test_replaceByte(int x, int n, int c)
     }
     return x;
 }
-//3
-int test_dividePower2(int x, int n)
-{
-    int p2n = 1<<n;
-    return x/p2n;
-}
-int test_bitParity(int x) {
-  int result = 0;
-  int i;
-  for (i = 0; i < 32; i++)
-    result ^= (x >> i) & 0x1;
-  return result;
-}
-int test_isLessOrEqual(int x, int y)
-{
-  return x <= y;
-}
 //4
 int test_remainderPower2(int x, int n)
 {
@@ -133,6 +126,13 @@ int test_howManyBits(int x) {
     for (cnt=0; a; a>>=1, cnt++)
         ;
     return (int)(cnt + 1);
+}
+int test_bitParity(int x) {
+  int result = 0;
+  int i;
+  for (i = 0; i < 32; i++)
+    result ^= (x >> i) & 0x1;
+  return result;
 }
 //float
 unsigned test_floatScale2(unsigned uf) {
